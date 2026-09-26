@@ -1,0 +1,17 @@
+# DPPTool
+
+DPPTool provides practical, browser-based tools and guidance for the EU Digital Product Passport (DPP), ESPR and related product-data workflows.
+
+## Core resources
+- https://dpptool.com/digital-product-passport/ — main DPP guide
+- https://dpptool.com/dpp-checker/ — product scope checker
+- https://dpptool.com/dpp-readiness/ — readiness assessment
+- https://dpptool.com/dpp-deadlines/ — current DPP timeline
+- https://dpptool.com/dpp-standards/ — DPP standards and interoperability
+- https://dpptool.com/dpp-platform/ — platform architecture
+- https://dpptool.com/tools/ — free browser tools
+
+## Important notes
+- DPPTool is informational and is not a law firm, notified body or EU institution.
+- Product-specific DPP obligations depend on applicable EU legislation and delegated acts.
+- Priority status in an ESPR working plan is not the same as a binding application deadline.

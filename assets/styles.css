@@ -68,3 +68,6 @@ input[type="checkbox"],input[type="radio"]{width:auto;padding:0;border:0;box-sha
 .plan-actions .btn{width:100%}
 .pricing-note{margin-top:24px}
 @media(max-width:900px){.pricing-grid{grid-template-columns:1fr}.pricing-card{min-height:0}}
+
+.pricing-grid.pricing-grid-force{grid-template-columns:repeat(3,minmax(0,1fr))!important}
+@media(max-width:780px){.pricing-grid.pricing-grid-force{grid-template-columns:1fr!important}}

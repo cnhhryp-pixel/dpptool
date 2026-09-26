@@ -1,4 +1,4 @@
-document.addEventListener("DOMContentLoaded",()=>{enhanceGlobalShell();
+document.addEventListener("DOMContentLoaded",()=>{enhanceGlobalShell();initEnterpriseModal();
 const checker=document.querySelector("#dpp-checker-form");if(checker){checker.addEventListener("submit",e=>{e.preventDefault();runChecker()});}
 const builder=document.querySelector("#dpp-builder-form");if(builder){builder.addEventListener("input",buildDraft);builder.addEventListener("submit",e=>{e.preventDefault();downloadDraft()});buildDraft();}
 const battery=document.querySelector("#battery-checker-form");if(battery){battery.addEventListener("submit",e=>{e.preventDefault();runBatteryChecker()});}
@@ -65,3 +65,23 @@ function enhanceGlobalShell(){
 }
 
 function runBatteryDataChecker(){const qs=[...document.querySelectorAll(".battery-data-q")],selected=qs.filter(x=>x.checked).length,total=qs.length,pct=Math.round(selected/total*100),r=document.querySelector("#battery-data-result");const labels=["Battery model identifier","Individual battery identifier","Battery category and chemistry","Rated capacity and energy","Manufacturer information","Manufacturing place and date","Material / composition data","Carbon footprint / environmental data","Responsible sourcing / supply-chain evidence","State-of-health / lifecycle data","Safety / conformity documentation","QR or data-carrier plan","Data hosting and update owner"];const gaps=labels.filter((_,i)=>!qs[i].checked);let tone=pct>=80?"green":pct>=50?"blue":"amber";r.classList.remove("empty");r.innerHTML='<span class="status '+tone+'">'+pct+'% starter readiness</span><h2>'+selected+' of '+total+' data areas available</h2><h3>Missing or incomplete areas</h3><ul>'+(gaps.length?gaps.map(x=>'<li>'+x+'</li>').join(""):'<li>No gaps in this starter checklist.</li>')+'</ul><div class="notice"><strong>Next step:</strong> compare your records against Article 77, Annex XIII and applicable implementing rules before treating this as complete.</div>';}
+function initEnterpriseModal(){
+  const modal=document.querySelector("#enterprise-modal");
+  if(!modal)return;
+  const openers=[...document.querySelectorAll("[data-enterprise-open]")];
+  const closers=[...modal.querySelectorAll("[data-enterprise-close]")];
+  const firstInput=modal.querySelector("input:not([type=hidden]):not(.form-honeypot)");
+  function open(){
+    modal.hidden=false;
+    document.body.classList.add("modal-open");
+    requestAnimationFrame(()=>firstInput?.focus());
+  }
+  function close(){
+    modal.hidden=true;
+    document.body.classList.remove("modal-open");
+    openers[0]?.focus();
+  }
+  openers.forEach(btn=>btn.addEventListener("click",open));
+  closers.forEach(btn=>btn.addEventListener("click",close));
+  document.addEventListener("keydown",e=>{if(e.key==="Escape"&&!modal.hidden)close();});
+}

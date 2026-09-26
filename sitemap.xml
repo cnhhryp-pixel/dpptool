@@ -25,4 +25,17 @@
 <url><loc>https://dpptool.com/electronics-dpp/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
 <url><loc>https://dpptool.com/de/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
 <url><loc>https://dpptool.com/fr/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+<url><loc>https://dpptool.com/dpp-data-fields/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+<url><loc>https://dpptool.com/dpp-identifiers/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+<url><loc>https://dpptool.com/gs1-digital-link/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+<url><loc>https://dpptool.com/dpp-api/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+<url><loc>https://dpptool.com/supplier-data/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+<url><loc>https://dpptool.com/csv-import/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+<url><loc>https://dpptool.com/dpp-csv-validator/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+<url><loc>https://dpptool.com/faq/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+<url><loc>https://dpptool.com/pricing/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+<url><loc>https://dpptool.com/es/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+<url><loc>https://dpptool.com/it/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+<url><loc>https://dpptool.com/nl/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+<url><loc>https://dpptool.com/pl/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
 </urlset>

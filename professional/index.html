@@ -1,0 +1,27 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Professional Workspace | DPPTool</title>
+<meta name="description" content="DPPTool Professional workspace for advanced reports, exports and higher-volume Digital Product Passport workflows.">
+<link rel="canonical" href="https://dpptool.com/professional/">
+<link rel="icon" href="/assets/favicon.svg"><link rel="manifest" href="/site.webmanifest">
+<link rel="stylesheet" href="/assets/styles.css?v=20260926-3">
+</head><body>
+<header class="site-header"><div class="container nav"><a class="brand" href="/"><span class="brand-mark">DPP</span>DPPTool</a><button class="menu-btn" type="button" aria-label="Open navigation" aria-expanded="false">☰</button><nav class="nav-links"><a href="/tools/">Tools</a><a href="/digital-product-passport/">DPP Guide</a><a href="/dpp-deadlines/">Deadlines</a><a href="/sectors/">Sectors</a><a href="/pricing/">Pricing</a><a class="nav-cta" href="/dpp-checker/">Check a product</a></nav></div></header>
+<main>
+<section class="page-hero"><div class="container"><span class="eyebrow">Professional workspace</span><h1>Advanced DPP analysis and export workflows.</h1><p>This workspace is unlocked only when a valid Professional Access Key is active in the browser.</p></div></section>
+<section class="section"><div class="container" id="professional-workspace">
+<div class="panel result empty" id="professional-gate"><div><div class="icon" style="margin:auto">PRO</div><h2>Checking Professional access…</h2><p>Your signed access key is being verified locally.</p></div></div>
+</div></section>
+</main>
+<footer class="footer"><div class="container"><div class="footer-bottom">© 2026 DPPTool.</div></div></footer>
+<script src="/assets/app.js?v=20260926-3" defer></script>
+<script src="/assets/pro-license.js?v=20260926-3" defer></script>
+<script>
+document.addEventListener("DOMContentLoaded",async()=>{
+  const gate=document.querySelector("#professional-gate");
+  const access=await window.DPPProLicense?.getAccess();
+  if(!access){gate.className="panel";gate.innerHTML='<span class="status amber">Professional locked</span><h2>A Professional Access Key is required</h2><p>Unlock this browser with the payment email and signed annual key.</p><div class="actions"><a class="btn primary" href="/professional-access/">Unlock Professional</a><a class="btn" href="/pricing/">View Pricing</a></div>';return;}
+  gate.className="";
+  gate.innerHTML='<div class="notice success"><strong>Professional active.</strong> License '+(access.licenseId||"Professional")+' is valid until '+access.exp+'.</div><div class="grid" style="margin-top:24px"><a class="card" href="/dpp-readiness/"><div class="icon">RPT</div><h3>Advanced readiness workflow</h3><p>Run the readiness assessment and prepare structured reporting/export workflows.</p></a><a class="card" href="/dpp-data-completeness/"><div class="icon">%</div><h3>Product data analysis</h3><p>Review product-data completeness before bulk preparation and reporting.</p></a><a class="card" href="/battery-passport-data-checker/"><div class="icon">BAT</div><h3>Battery specialist workflow</h3><p>Assess battery data before creating specialist Professional reports.</p></a></div><div class="notice" style="margin-top:24px"><strong>Professional V1:</strong> access control is active now. Advanced report generation, bulk analysis and export modules will be added behind this same Professional gate.</div>';
+});
+</script>
+</body></html>

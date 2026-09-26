@@ -7,7 +7,7 @@
   Cache-Control: public, max-age=0, must-revalidate
 
 /assets/*
-  Cache-Control: public, max-age=604800, immutable
+  Cache-Control: public, max-age=3600, must-revalidate
 
 /sitemap.xml
   Cache-Control: public, max-age=3600

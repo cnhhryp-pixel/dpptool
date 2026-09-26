@@ -1,9 +1,20 @@
 {
-  "name":"DPPTool",
-  "short_name":"DPPTool",
-  "start_url":"/",
-  "display":"standalone",
-  "background_color":"#f6f8fb",
-  "theme_color":"#155eef",
-  "icons":[{"src":"/assets/favicon.svg","sizes":"any","type":"image/svg+xml","purpose":"any"}]
+  "name": "DPPTool — Digital Product Passport Tools",
+  "short_name": "DPPTool",
+  "id": "/",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "lang": "en",
+  "description": "Digital Product Passport tools and EU DPP implementation guides.",
+  "background_color": "#f6f8fb",
+  "theme_color": "#155eef",
+  "icons": [
+    {
+      "src": "/assets/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
 }

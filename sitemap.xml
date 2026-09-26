@@ -38,4 +38,11 @@
 <url><loc>https://dpptool.com/it/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
 <url><loc>https://dpptool.com/nl/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
 <url><loc>https://dpptool.com/pl/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+<url><loc>https://dpptool.com/tools/</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
+<url><loc>https://dpptool.com/dpp-identifier-validator/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+<url><loc>https://dpptool.com/gtin-validator/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+<url><loc>https://dpptool.com/dpp-data-completeness/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+<url><loc>https://dpptool.com/dpp-json-validator/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+<url><loc>https://dpptool.com/dpp-link-builder/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+<url><loc>https://dpptool.com/supplier-template-generator/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
 </urlset>

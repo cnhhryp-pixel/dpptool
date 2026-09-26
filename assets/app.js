@@ -1,4 +1,4 @@
-document.addEventListener("DOMContentLoaded",()=>{enhanceGlobalShell();const menu=document.querySelector(".menu-btn"),nav=document.querySelector(".nav-links");if(menu&&nav)menu.addEventListener("click",()=>nav.classList.toggle("open"));
+document.addEventListener("DOMContentLoaded",()=>{enhanceGlobalShell();
 const checker=document.querySelector("#dpp-checker-form");if(checker){checker.addEventListener("submit",e=>{e.preventDefault();runChecker()});}
 const builder=document.querySelector("#dpp-builder-form");if(builder){builder.addEventListener("input",buildDraft);builder.addEventListener("submit",e=>{e.preventDefault();downloadDraft()});buildDraft();}
 const battery=document.querySelector("#battery-checker-form");if(battery){battery.addEventListener("submit",e=>{e.preventDefault();runBatteryChecker()});}
@@ -42,8 +42,10 @@ function enhanceGlobalShell(){
   const main=document.querySelector("main");if(main&&!main.id)main.id="main-content";
   if(!document.querySelector(".skip-link")){const skip=document.createElement("a");skip.className="skip-link";skip.href="#main-content";skip.textContent="Skip to content";document.body.prepend(skip);}
   const lang=document.documentElement.lang||"en",navWrap=document.querySelector(".nav"),nav=document.querySelector(".nav-links");
-  if(lang==="en"&&nav){
+  if(lang==="en"&&nav&&!nav.children.length){
     nav.innerHTML='<a href="/tools/">Tools</a><a href="/digital-product-passport/">DPP Guide</a><a href="/dpp-deadlines/">Deadlines</a><a href="/sectors/">Sectors</a><a href="/pricing/">Pricing</a><a class="nav-cta" href="/dpp-checker/">Check a product</a>';
+  }
+  if(nav){
     const path=location.pathname;[...nav.querySelectorAll("a")].forEach(a=>{const href=a.getAttribute("href");if(href!=="/"&&(path===href||path.startsWith(href)))a.setAttribute("aria-current","page");});
   }
   if(navWrap&&nav&&!navWrap.querySelector(".menu-btn")){

@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+<rect width="1200" height="630" fill="#f6f8fb"/>
+<rect x="70" y="70" width="1060" height="490" rx="36" fill="#ffffff" stroke="#dce3ec" stroke-width="3"/>
+<rect x="105" y="105" width="80" height="80" rx="20" fill="#155eef"/>
+<text x="145" y="156" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="28" font-weight="700" fill="#ffffff">DPP</text>
+<text x="215" y="160" font-family="Arial,Helvetica,sans-serif" font-size="48" font-weight="700" fill="#10233f">DPPTool</text>
+<text x="105" y="300" font-family="Arial,Helvetica,sans-serif" font-size="64" font-weight="700" fill="#10233f">Digital Product Passport</text>
+<text x="105" y="380" font-family="Arial,Helvetica,sans-serif" font-size="54" font-weight="700" fill="#155eef">Tools for EU Compliance</text>
+<text x="105" y="455" font-family="Arial,Helvetica,sans-serif" font-size="28" fill="#5e6c82">Check scope • Assess readiness • Structure product data</text>
+<text x="105" y="515" font-family="Arial,Helvetica,sans-serif" font-size="26" font-weight="700" fill="#10233f">dpptool.com</text>
+</svg>

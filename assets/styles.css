@@ -11,3 +11,11 @@
 input[type="checkbox"],input[type="radio"]{width:auto;padding:0;border:0;box-shadow:none;accent-color:var(--blue);margin-right:8px;vertical-align:middle}
 .panel label:has(input[type="checkbox"]),.panel label:has(input[type="radio"]){display:flex;align-items:flex-start;gap:6px;font-weight:650;line-height:1.4;cursor:pointer}
 .panel label:has(input[type="checkbox"]) input,.panel label:has(input[type="radio"]) input{flex:0 0 auto;margin-top:2px}
+
+.skip-link{position:fixed;left:14px;top:10px;z-index:1000;background:var(--navy);color:#fff;padding:10px 14px;border-radius:9px;transform:translateY(-160%);transition:transform .18s ease}.skip-link:focus{transform:translateY(0)}
+.nav-links a[aria-current="page"]{color:var(--blue);font-weight:800}.nav-links a[aria-current="page"]:not(.nav-cta){position:relative}.nav-links a[aria-current="page"]:not(.nav-cta):after{content:"";position:absolute;left:0;right:0;bottom:-9px;height:2px;background:var(--blue);border-radius:2px}
+.card{transition:transform .18s ease,box-shadow .18s ease,border-color .18s ease}.card:hover{transform:translateY(-3px);box-shadow:0 16px 38px rgba(16,35,63,.12);border-color:#c8d5e7}
+.btn{transition:transform .15s ease,box-shadow .15s ease,border-color .15s ease}.btn:focus-visible,.nav-links a:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible{outline:3px solid rgba(21,94,239,.22);outline-offset:2px}
+.panel h2:first-child{margin-top:0}.panel .btn.primary{box-shadow:0 8px 18px rgba(21,94,239,.16)}
+.prose{font-size:16.5px}.prose p,.prose li{line-height:1.72}.page-hero{border-bottom:1px solid var(--line)}
+@media(max-width:850px){.nav{height:66px}.nav-links{top:66px;box-shadow:0 14px 28px rgba(16,35,63,.08)}.nav-links a{width:100%;padding:8px 0}.nav-links .nav-cta{width:100%;text-align:center;margin-top:4px}.nav-links a[aria-current="page"]:not(.nav-cta):after{display:none}.page-hero{padding:44px 0 30px}.page-hero h1{font-size:38px}.hero h1{font-size:40px}.hero p,.page-hero p{font-size:17px}.panel{padding:20px}.container{width:min(100% - 28px,1160px)}}

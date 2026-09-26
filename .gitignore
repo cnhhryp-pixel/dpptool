@@ -1,0 +1,3 @@
+# Never commit Professional license signing keys
+*.private.pem
+dpptool-professional-private-key.pem

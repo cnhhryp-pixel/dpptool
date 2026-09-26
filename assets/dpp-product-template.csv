@@ -1,0 +1,2 @@
+product_id,sku,product_name,gtin,manufacturer,country_of_origin,materials,supplier_ids,compliance_docs,repair_info,end_of_life_info
+P-001,SKU-001,Example Product,0123456789012,Example Manufacturer,DE,"aluminium;polypropylene","SUP-01;SUP-02","DOC-001;DOC-002",Repair instructions reference,Recycling instructions reference

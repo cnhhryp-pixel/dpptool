@@ -1,0 +1,22 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Digital Product Passport JSON Schema Example | DPPTool</title><meta name="description" content="A practical starter JSON structure for DPP product data that can be exported and validated in browser tools."><link rel="canonical" href="https://dpptool.com/dpp-json-schema/"><link rel="icon" href="/assets/favicon.svg"><link rel="stylesheet" href="/assets/styles.css"></head><body><header class="site-header"><div class="container nav"><a class="brand" href="/"><span class="brand-mark">DPP</span>DPPTool</a><button class="menu-btn" aria-label="Menu">☰</button><nav class="nav-links"><a href="/tools/">Tools</a><a href="/dpp-checker/">DPP Checker</a><a href="/sectors/">Sectors</a><a href="/guides/">Guides</a><a href="/pricing/">Pricing</a></nav></div></header><main><section class="page-hero"><div class="container"><span class="eyebrow">Developer resource</span><h1>A portable starter JSON structure for DPP product data.</h1><p>This is an implementation template for data readiness, not an official universal EU schema. Final sector schemas depend on the applicable legal and technical specifications.</p></div></section><section class="section"><div class="container prose"><h2>Starter structure</h2><div class="codebox">{
+  "product": {
+    "id": "PROD-001",
+    "name": "Example Product",
+    "sku": "SKU-001",
+    "gtin": "0123456789012",
+    "manufacturer": {
+      "name": "Example Manufacturer",
+      "country": "DE"
+    },
+    "materials": [
+      {"name": "aluminium", "share_percent": 80}
+    ]
+  },
+  "compliance": {
+    "documents": ["DOC-001"]
+  },
+  "lifecycle": {
+    "repair_info": "",
+    "end_of_life_info": ""
+  }
+}</div><h2>Why keep it portable?</h2><p>ESPR requires open, interoperable and transferable DPP data without vendor lock-in. A clean internal JSON model makes it easier to map your data to future sector schemas or different service providers.</p><div class="actions"><a class="btn primary" href="/dpp-json-validator/">Validate JSON</a><a class="btn" href="/dpp-api/">API roadmap</a></div></div></section></main><footer class="footer"><div class="container"><div class="footer-bottom">© 2026 DPPTool • Practical guidance, not legal advice.</div></div></footer><script src="/assets/app.js"></script></body></html>
